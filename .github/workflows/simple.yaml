@@ -7,11 +7,14 @@ jobs:
       runs-on: ubuntu-latest
       steps: 
         - name: echo a string
-          run: echo "Hello World"
+          run: |
+            echo "Hello World"
+            echo "My name is Durmus"
         - name: multiline script
           run: |
             node -v
             npm -v
+            go -v
         - name: python Command
           run: |
             import platform
@@ -23,7 +26,10 @@ jobs:
       needs: ["run-shell-command"]
       steps: 
         - name: Directory Powershell
-          run: Get-Location
+          run: |
+            Get-Location
+            ./Desktop
+            ls
         - name: Directory Bash
           run: pwd
           shell: bash
