@@ -22,7 +22,7 @@ jobs:
         run: |
           pwd
           ls -a
-          git -v
+          git --version
       - name: Simple JS Actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
