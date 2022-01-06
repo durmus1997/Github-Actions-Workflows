@@ -28,7 +28,6 @@ jobs:
         - name: Directory Powershell
           run: |
             Get-Location
-            ls
         - name: Directory Bash
           run: pwd
           shell: bash
