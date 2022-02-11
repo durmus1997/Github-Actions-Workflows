@@ -10,6 +10,7 @@ jobs:
           run: |
             echo "Hello World"
             echo "My name is Durmus"
+          timeout-minutes: 0
         - name: multiline script
           run: |
             node -v
